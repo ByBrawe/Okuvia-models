@@ -36,3 +36,26 @@ Three optional CPU ONNX packages, each with one matching official Alba preset. N
 
 Windows ONNX and Android API 36 x86_64 release WAV smoke tests passed. Physical ARM64 and general pronunciation-quality acceptance remain pending. These are experimental model assets, not an application APK/AAB.
 All model weights are optional downloads; users should install a compatible Okuvia build.
+## Pocket TTS French and Dutch — experimental
+
+[Release, manifest and seven generated previews](https://github.com/ByBrawe/Okuvia-models/releases/tag/pocket-multilingual-preset-20261026)
+
+- French / Estelle: `fr-pocket-tts-202610-preset.zip`, 193598080 bytes.
+  SHA-256: `6068d9e5fa2b91c92bda8a3d874c34a3f99799cd5bef45634644b4e37febf718`.
+- Dutch / Daan: `nl-pocket-tts-202610-preset.zip`, 191902278 bytes.
+  SHA-256: `4ae35adbf240233d33786cec71db20216e26ace044b229b61e97b989a82bf1d8`.
+
+Official public Kyutai weights and official precomputed voice states are CC BY 4.0.
+Weights are pinned to revision `1e08e6a23401048648a9fdcfde2f89348215c2a7`;
+voice states to `a7056f505a4a8ca72d8b5fb1440071d6f1a35739`.
+Every ZIP includes the full model license and voice attribution. Names identify
+upstream presets and do not imply endorsement. No raw reference recordings or
+user voice-cloning feature are included. Okuvia converted the ONNX graphs,
+tokenizer and fixed KV preset representation; upstream source and runtime notices
+remain in the package. Runtime code uses MIT and Apache-2.0 components.
+
+Official Python-reference and Android API36 x86_64 WAV tests passed, including
+active cancellation and restart. This does not establish numerical graph parity,
+physical ARM64 compatibility or independent pronunciation-quality acceptance.
+Other preview languages use their separately attributed upstream packages;
+these two ZIPs do not contain all seven models. Install a compatible Okuvia build.
